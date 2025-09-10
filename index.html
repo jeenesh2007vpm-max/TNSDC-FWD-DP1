@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jeenesh | Personal Webpage</title>
+  <meta name="description" content="Personal webpage of Jeenesh — projects, about, and contact." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand-logo" aria-hidden="true">J</span>
+        <span class="brand-text">Jeenesh</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/jeenesh2007vpm-max" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container">
+        <h1>Hi, I'm <span class="accent">Jeenesh</span></h1>
+        <p class="subtitle">I’m building my corner of the internet — simple, fast, and to the point.</p>
+        <div class="cta-row">
+          <a class="btn primary" id="email-btn" href="mailto:jeenesh2007vpm@gmail.com?subject=Hello%20Jeenesh">Email me</a>
+          <a class="btn secondary" href="https://github.com/jeenesh2007vpm-max" target="_blank">My GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>About</h2>
+          <p>
+            I’m <strong>Jeenesh</strong>, exploring the web and how ideas travel through it. I enjoy learning,
+            shipping small projects, and keeping things simple.
+          </p>
+          <ul class="list">
+            <li><strong>Email:</strong> <a href="mailto:jeenesh2007vpm@gmail.com">jeenesh2007vpm@gmail.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/jeenesh2007vpm-max" target="_blank">jeenesh2007vpm-max</a></li>
+            <li><strong>Focus:</strong> Web basics, HTML, CSS, JavaScript</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Quick stats</h3>
+          <ul class="list">
+            <li><strong>Pagespeed-friendly:</strong> Minimal CSS & no heavy frameworks</li>
+            <li><strong>Responsive:</strong> Works on phones, tablets, and desktops</li>
+            <li><strong>Accessible:</strong> Landmarks, labels, and good contrast</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Starter portfolio</h3>
+            <p>A minimal portfolio section to showcase work, learning logs, and small experiments.</p>
+            <a class="link" href="https://github.com/jeenesh2007vpm-max" target="_blank">View on GitHub</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Use the quick form. It opens your email app with your message ready to send.</p>
+
+        <form id="contact-form" class="contact-form" data-email="jeenesh2007vpm@gmail.com" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="form-row">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="msg" rows="4" placeholder="What’s on your mind?" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send</button>
+            <span id="form-status" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Jeenesh — Made with HTML, CSS, and JS.</p>
+    </div>
+  </footer>
+</body>
+</html>
